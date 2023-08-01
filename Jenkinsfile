@@ -8,12 +8,12 @@ pipeline {
         }
         stage("Stage 2"){
             steps {
-                sh 'python --version'
+                echo "This is stage 2"
             }
         }
         stage("Stage 3"){
             steps {
-                sh 'python app.py'
+              echo "This is stage 3"
             }
         }
     }
